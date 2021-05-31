@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wfh-subscriptions",
+      "handler": "wfh-subscriptions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wfh-subscriptions/count",
+      "handler": "wfh-subscriptions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wfh-subscriptions/:id",
+      "handler": "wfh-subscriptions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wfh-subscriptions",
+      "handler": "wfh-subscriptions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wfh-subscriptions/:id",
+      "handler": "wfh-subscriptions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wfh-subscriptions/:id",
+      "handler": "wfh-subscriptions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

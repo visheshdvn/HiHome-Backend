@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wfh_subscriptions",
+  "info": {
+    "name": "WFHSubscriptions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "subscriptionTerm": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
